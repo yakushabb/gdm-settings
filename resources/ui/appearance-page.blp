@@ -25,6 +25,12 @@ Box content_box {
   }
 
   Adw.PreferencesGroup {
+    title: _("Light Mode");
+    description: _("NOTE: This will only work on GNOME 48 (and above)");
+    Adw.SwitchRow light_mode_switch { title: _("Light Mode"); }
+  }
+
+  Adw.PreferencesGroup {
     title: _("Themes");
 
     Adw.ComboRow shell_theme_comborow { title: _("Shell"); }

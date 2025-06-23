@@ -17,6 +17,10 @@
 	   </choices>
 	 </key>
 
+	 <key name="light-mode" type="b">
+		<default>false</default>
+	 </key>
+
 	 <key name="shell-theme" type="s">
 	   <default>"default"</default>
 	   <summary>Theme Name</summary>

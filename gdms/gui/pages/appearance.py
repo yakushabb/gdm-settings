@@ -25,6 +25,7 @@ class AppearancePageContent (PageContent):
         self.set_child(self.builder.get_object('content_box'))
 
         self.accent_selector = self.builder.get_object('accent_selector')
+        self.light_mode_switch = self.builder.get_object('light_mode_switch')
 
         self.shell_theme_comborow = self.builder.get_object('shell_theme_comborow')
         self.icon_theme_comborow = self.builder.get_object('icon_theme_comborow')
@@ -71,6 +72,7 @@ class AppearancePageContent (PageContent):
 
     def bind_to_gsettings (self):
         appearance_settings.bind('accent-color', self.accent_selector, 'selected')
+        appearance_settings.bind('light-mode', self.light_mode_switch, 'active')
         appearance_settings.bind_via_list('shell-theme', self.shell_theme_comborow, 'selected',
                                           shell_themes.theme_ids, strict=False)
         appearance_settings.bind_via_list('icon-theme', self.icon_theme_comborow, 'selected',
