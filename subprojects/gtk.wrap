@@ -1,8 +1,8 @@
 [wrap-file]
-source_url = https://download.gnome.org/sources/gtk/4.16/gtk-4.16.7.tar.xz
-source_filename = gtk-4.16.7.tar.xz
-source_hash = 5303c7624e15a48880591b9ddd43389afba3de4fb92a219719519bb1642ce3dc
-directory = gtk-4.16.7
+source_url = https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz
+source_filename = gtk-4.18.6.tar.xz
+source_hash = e1817c650ddc3261f9a8345b3b22a26a5d80af154630dedc03cc7becefffd0fa
+directory = gtk-4.18.6
 
 [provide]
 dependency_names = gtk4
